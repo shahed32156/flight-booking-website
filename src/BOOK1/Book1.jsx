@@ -222,7 +222,7 @@ const handleMinus = () => {
                 
                 className={`border-[1px] border-black hover:bg-black hover:text-white flex justify-center items-center cursor-pointer h-[50px] w-[80px] rounded-lg text-[25px] ${count === 0 ? 'disabled' : ''}`}
                 onClick={handleMinus}
-                style={{ pointerEvents: count === 0 ? 'none' : 'auto' }}
+                style={{ pointerEvents: count === 1 ? 'none' : 'auto' }}
             >
                 -
             </a>
