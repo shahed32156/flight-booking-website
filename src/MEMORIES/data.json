@@ -1,0 +1,31 @@
+[
+
+    {
+
+       "id": 1,
+       "img": "1",
+       "title": "Travel requirements for Dubai",
+       "desc" : "Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!"
+
+    },
+
+    {
+
+        "id": 2,
+        "serial": "2",
+        "title": "Chauffeur services at your arrival",
+        "desc" : "Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!"
+ 
+     },
+
+     {
+
+        "id": 3,
+        "serial": "3",
+        "title": "Multi-risk travel insurance",
+        "desc" : "Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!"
+ 
+     }
+
+
+]

@@ -1,0 +1,52 @@
+[
+
+
+    {
+     
+        "id" : 1,
+        "img" : "./Images/services1.png",
+        "title" : "Web Design & Development",
+        "desc" : "We offer cutting-edge web design services to create visually stunning and user-friendly websites, alongside robust web development solutions to ensure seamless functionality and performance."
+
+    },
+
+    {
+     
+        "id" : 2,
+        "img" : "./Images/services2.png",
+        "title" : "Graphix Design",
+        "desc" : "Our team specializes in creating eye-catching graphix designs and cohesive brand experiences that resonate with your target audience."
+
+    },
+
+    {
+     
+        "id" : 3,
+        "img" : "./Images/services3.png",
+        "title" : "Artificial Inteligence",
+        "desc" : "We offers cutting-edge AI services including predictive analytics and natural language processing solutions, designed to optimize business operations and enhance customer engagement."
+
+    },
+
+    {
+     
+        "id" : 4,
+        "img" : "./Images/services4.png",
+        "title" : "Digital Marketing",
+        "desc" : "We offers comprehensive digital marketing services including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, content creation, email marketing, web design and development."
+
+    },
+
+    {
+     
+        "id" : 5,
+        "img" : "./Images/services5.png",
+        "title" : "Video Editing",
+        "desc" : "We offers comprehensive video editing services including cutting and trimming, color correction, visual effects, sound editing, motion graphics, subtitles, and final formatting for various platforms to ensure your video projects are polished and professional."
+
+    }
+
+
+
+
+]
