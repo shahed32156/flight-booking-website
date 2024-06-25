@@ -64,7 +64,7 @@ const Chatbot = () => {
 
 <ThemeProvider theme={theme}>
       <ChatBot steps={steps} floating={true} 
-      headerTitle="Diffusion Five Chatbot"
+      headerTitle="Travel Agency Chatbot"
       recognitionEnable={true}
       speechSynthesis={{ enable: true, lang: 'en' }}
       
