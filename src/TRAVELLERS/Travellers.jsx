@@ -17,7 +17,7 @@ const Travellers = () => {
         <div className='traveller  h-[300px] w-[220px] mx-auto'>
           <img className='traveller-image rounded-full' src="./Images/peru.jpg" alt="" />
           <img className='traveller-icon h-[50px] w-[50px] rounded-full border-white border-4' src='./Images/john.jpg' alt="" />
-          <h1 className='traveller-name bg-white pb-10 pt-2 text-[13px] font-bold w-[220px]'>Jahan Doe</h1>
+          <h1 className='traveller-name bg-white pb-10 pt-2 text-[13px] font-bold w-[220px]'>John Doe</h1>
         </div>
 
         <div className='traveller h-[300px] w-[220px] mx-auto'>
