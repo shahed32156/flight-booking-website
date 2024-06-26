@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 
 import Swal from'sweetalert2';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { GrPowerReset } from 'react-icons/gr';
 
 
-const Signin = () => {
+
+const Forgot_pass = () => {
 
   const navigate = useNavigate(); 
   const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
 
 
   const handleEmail = (e) => {
@@ -17,28 +17,22 @@ const Signin = () => {
       console.log(e.target.value);
   }
 
-  const handlePass = (e) => {
-    setPass(e.target.value);
-    console.log(e.target.value);
-}
 
   const handleSubmit = (e) => {
       e.preventDefault();
- 
 
       Swal.fire({
           title: "Success",
-          text: "Successfully signed in",
+          text: "Send Successful",
           icon: "success"
       });
 
-      navigate('/home');
+      navigate('/signin');
   }
 
   const handleReset = () => {
 
       setEmail("");
-      setPass("");
   }
 
 
@@ -49,20 +43,10 @@ const Signin = () => {
    
 
     <div className='mt-20 md:mt-28 text-center'>
-        <h1 className='text-[16px] tracking-[10px] font-medium text-[rgb(122,121,121)] uppercase'>Sign in</h1>
+        <h1 className='text-[16px] tracking-[10px] font-medium text-[rgb(122,121,121)] uppercase'>Forget Password</h1>
     </div>
-    
-   
- <div className='mt-4 md:mt-10 flex flex-col justify-center items-center'>
 
-        <div className='flex flex-row  justify-center items-center bg-[white]  rounded-full'>
 
-        <NavLink to="/signin" className="signin bg-[black] text-white rounded-l-full py-2 px-4 text-[18px]"> User</NavLink>
-        <NavLink to="/admin_signin" className="signin rounded-r-full py-2 px-4 text-[18px]"> Admin</NavLink>
-
-        </div>
-
- </div>
 
     <div className='mt-20 flex justify-center items-center mx-3'>
 
@@ -84,16 +68,11 @@ const Signin = () => {
         <div className='label absolute bg-white text-[#999] top-3 pr-2 left-3 pointer-events-none z-10'>Enter your email</div>
     </div>
 
-    <div className='relative'>
-        <input className='w-[300px] h-[50px] bg-transparent focus:outline-none border-2 border-black pl-4 rounded-lg md:w-[400px]' required type="password" 
-        name="password" onChange={handlePass} value={pass} />
-        <div className='label absolute bg-white text-[#999] top-3 pr-2 left-3 pointer-events-none z-10'>Enter your password</div>
-    </div>
 
 
     <div className='flex gap-4 justify-center items-center'>
         
-       <button className='bg-black text-white font-[Poppins] duration-500 px-6 py-2  md:hover:bg-[#4e4e4e] rounded'>Sign in</button>
+    <button className='bg-black text-white font-[Poppins] duration-500 px-6 py-2  md:hover:bg-[#4e4e4e] rounded'>Send</button>
        
        <a className='bg-black flex items-center gap-1 cursor-pointer text-white font-[Poppins] duration-500 px-6 py-2  md:hover:bg-[#4e4e4e] rounded' onClick={handleReset}>
         
@@ -103,12 +82,6 @@ const Signin = () => {
     
     </div>
 
-<div className='flex flex-col gap-2 items-center justify-center'>
-
-<p className='text-[14px]'>Don't have an account? <Link to="/signup" className='text-blue-500 hover:underline'>Sign up</Link></p>
-<p className='text-[14px]'> <Link to="/forgot_password" className='text-blue-500 hover:underline'>Forgot password</Link></p> 
-
-</div>
 
     
 </form>
@@ -121,4 +94,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Forgot_pass
