@@ -119,11 +119,7 @@ const Signup = () => {
         <div className='label absolute bg-white text-[#999] top-3 pr-2 left-3 pointer-events-none z-10'>Enter your password</div>
     </div>
    
-    <div>
-
-      <p className='text-[14px]'>Already have an account? <Link to="/signin" className='text-blue-500 hover:underline'>Sign in</Link></p>
-
-    </div>
+   
 
     <div className='flex gap-4 justify-center items-center'>
         
@@ -137,7 +133,12 @@ const Signup = () => {
     
     </div>
 
-    
+    <div>
+
+      <p className='text-[14px]'>Already have an account? <Link to="/signin" className='text-blue-500 hover:underline'>Sign in</Link></p>
+
+    </div>
+
 </form>
 
 </div>
