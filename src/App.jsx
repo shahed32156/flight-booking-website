@@ -25,6 +25,7 @@ import Flights_table from './ALL_FLIGHTS/Flights_table';
 import Flights_table_oneWay from './ALL_FLIGHTS/Flights_table_oneWay';
 import Ticket from './TICKET/Ticket';
 import Chatbot from './CHATBOT/Chatbot';
+import Forgot_pass from './SIGNIN/Forgot_pass';
 
 function App() {
 
@@ -117,6 +118,23 @@ function App() {
 
               />
 
+              <Route path='/forgot_password' element={
+
+
+              <>
+
+              <Carousel />
+                  <RevealOnScroll>
+                    <Forgot_pass />
+                  </RevealOnScroll>
+
+
+              </>  
+
+
+              }
+
+              />
 
               <Route path='/admin_signin' element={
 
