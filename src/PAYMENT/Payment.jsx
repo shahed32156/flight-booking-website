@@ -15,8 +15,9 @@ const Payment = () => {
 
   const handleCardNumber = (e) => {
 
-      setCardNumber(e.target.value);
-      console.log(e.target.value);
+    setCardNumber(e.target.value);
+    console.log(e.target.value);
+      
       
   }
 
@@ -28,21 +29,60 @@ const Payment = () => {
 }
 
   const handleCVV = (e) => {
-      setCvv(e.target.value);
-      console.log(e.target.value);
+    const value = e.target.value;
+    const regex = /^[0-9]*$/;
+
+    if (regex.test(value)) {
+      setCvv(value);
+    } else {
+      Swal.fire({
+        title: "Error",
+        text: "Invalid CVV",
+        icon: "error"
+      });
+    }
+
+    console.log(value);
   }
 
 
   const handleSubmit = (e) => {
       e.preventDefault();
+      
+      if (cardNumber.length != 12) {
+        
+        Swal.fire({
+            title: "Error",
+            text: "Card number must be 12 digits long",
+            icon: "error"
+        });
 
-      Swal.fire({
-          title: "Success",
-          text: "Successfully payed",
-          icon: "success"
-      });
+        return;
 
-      navigate("/home");
+      }
+
+      if (cvv.length != 3) {
+
+        Swal.fire({
+            title: "Error",
+            text: "CVV must be 3 digits long",
+            icon: "error"
+        });
+    
+        return;
+      }
+
+
+        Swal.fire({
+            title: "Success",
+            text: "Successfully paid",
+            icon: "success"
+        });
+
+        navigate("/home");
+      
+
+      
   }
 
   const handleReset = () => {
